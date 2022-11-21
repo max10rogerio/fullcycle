@@ -31,6 +31,7 @@ services:
       - app
     volumes:
       - ./node:/usr/app/node
+      - /usr/app/node/node_modules
   nginx:
     build: ./nginx
     container_name: nginx
